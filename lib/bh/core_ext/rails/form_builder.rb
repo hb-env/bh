@@ -6,11 +6,11 @@ require 'bh/core_ext/rails/form/file_field_helper'
 require 'bh/core_ext/rails/form/legend_helper'
 require 'bh/core_ext/rails/form/radio_button_helper'
 require 'bh/core_ext/rails/form/select_helper'
+require 'bh/core_ext/rails/form/date_select_helper'
 require 'bh/core_ext/rails/form/static_control_helper'
 require 'bh/core_ext/rails/form/submit_helper'
 
 module Bh
-  # @api private
   class FormBuilder < ActionView::Helpers::FormBuilder
     include Form::CheckBoxHelper
     include Form::FieldHelper
@@ -20,6 +20,7 @@ module Bh
     include Form::LegendHelper
     include Form::RadioButtonHelper
     include Form::SelectHelper
+    include Form::DateSelectHelper
     include Form::StaticControlHelper
     include Form::SubmitHelper
 
