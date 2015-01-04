@@ -13,7 +13,7 @@ module Bh
     class Railtie < ::Rails::Railtie
       initializer 'bh.add_helpers' do
         ActionView::Base.send :include, Bh::Helpers
-        ActionView::Base.send :include, Bh::Rails::Helpers
+        #ActionView::Base.send :include, Bh::Rails::Helpers
       end
 
       initializer 'bh.add_views' do |app|
